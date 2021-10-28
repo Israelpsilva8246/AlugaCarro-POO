@@ -42,7 +42,7 @@ public class carroAddController implements ActionListener {
 					+ CategoriaCarro.PICAPE + "\n2." + CategoriaCarro.SUV + "\n3." + CategoriaCarro.CONVERSIVEL
 					+ "\n4." + CategoriaCarro.DESCONHECIDO + "\n5.Não adicionar mais categorias");
 			switch (opcao) {
-			case "1": // assumindo que usuário não erra
+			case "1": 
 				categorias.add(CategoriaCarro.PICAPE);
 				break;
 			case "2":
