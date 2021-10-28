@@ -24,6 +24,16 @@ public class SisAlugaCarro implements SistemaAlugaCarro {
 		}
 		return false;
 	}
+	
+	@Override
+	public boolean cadastrarCarro(Carro carro){
+        if(existeCarro(carro)){
+            return false;
+        }
+        this.carros.add(carro);
+        return true;
+
+    }
 
 	public boolean existeCliente(String cpf) {
 		for (Cliente c : this.clientes.values()) {

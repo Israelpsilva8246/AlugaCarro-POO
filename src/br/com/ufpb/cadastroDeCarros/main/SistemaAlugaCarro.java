@@ -6,6 +6,8 @@ import java.util.List;
 public interface SistemaAlugaCarro {
 
 	boolean existeCarro(Carro carro);
+	
+	public boolean cadastrarCarro(Carro carro);
 
 	boolean existeCliente(String cpf);
 
